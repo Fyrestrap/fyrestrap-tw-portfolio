@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW Portfolio | Free Tailwind CSS theme by Fyrestrap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                fontFamily: {
+                    'Montserrat': ['Montserrat'],
+                    'Noto-Sans': ['"Noto Sans"']
+                }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="top" class="font-Noto-Sans">
+    <!-- Navigation -->
+    <nav class="bg-white/95 border-gray-400 py-3 md:py-5 w-full fixed z-40 top-0 duration-500" id="menu-nav">
+        <div class="container px-4 md:px-20 flex flex-wrap justify-between items-center mx-auto">
+            <a href="#top" class="flex items-center text-2xl font-semibold text-gray-700">
+                <!-- <img src="" class="mr-3 h-6 sm:h-9" alt="Logo"> -->
+                Fyrestrap.
+            </a>
+
+            <button type="button" data-collapse-toggle="mobile-menu" class="inline-flex items-center p-2 ml-3 text-sm text-gray-200 rounded lg:hidden hover:bg-gray-500 mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="hidden w-full lg:block lg:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 text-base font-medium">
+                    <li>
+                        <a href="#top" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Me</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">About</a>
+                    </li>
+                    <li>
+                        <a href="#commitment" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Commitment</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full h-screen">
+        <div class="container h-full mx-auto p-5 md:p-20 pb-10 pt-24">
+            <div class="w-full h-full md:mt-5 rounded-2xl bg-[url('assets/img/professional.jpg')] bg-cover bg-center lg:bg-top flex">
+                <div class="my-auto py-10 px-5 md:px-10 lg:px-20 text-white drop-shadow-lg">
+                    <h1 class="font-bold uppercase font-Montserrat tracking-wider text-6xl lg:text-8xl mb-4">Nathan </h1>
+                    <h1 class="font-bold uppercase font-Montserrat tracking-wider text-slate-800 text-5xl lg:text-6xl mb-4">Dexter</h1>
+                    <div class="w-20 h-2 bg-slate-800 mb-4 ml-1"></div>
+                    <p class="italic font-medium text-black text-lg mb-10 ml-1">Web Developer & Creative Content Creator</p>
+
+                    <div class="container text-center flex">
+                        <ul class="flex content-center gap-5 text-gray-50">        
+                            <li>
+                              <a href="#" class="">
+                                <span class="fa-stack text-slate-800">
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                            <li>
+                              <a href="#" class="">
+                                <span class="fa-stack text-slate-800">
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                            <li>
+                              <a href="#" class="">
+                                <span class="fa-stack text-slate-800">
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                            <li>
+                              <a href="#" class="">
+                                <span class="fa-stack text-slate-800">
+                                  <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-10 md:py-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <p class="font-bold text-lg text-gray-600 tracking-wider mb-20 md:ml-1 px-5 md:px-20">About me.</p>
+
+            <div class="lg:flex">
+              <div class="w-full lg:w-3/5">
+                  <div class="pb-10 px-5 md:px-20 text-black">                      
+                      <h2 class="font-bold uppercase font-Montserrat tracking-wider text-3xl mb-4">I do what I love</h1>
+                      <h2 class="font-bold uppercase font-Montserrat tracking-wider text-slate-800 text-3xl mb-4">And what <span class="text-yellow-400">I love</span> is <span class="text-yellow-400">developing websites</span></h1>
+  
+                      <div class="w-20 h-2 bg-slate-800 mb-10 ml-1"></div>
+  
+                      <p class="font-light text-black text-lg ml-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt et deserunt delectus, magni eos molestiae quos enim eveniet beatae aut odio suscipit quo animi, facilis neque. Omnis odio porro quaerat suscipit laudantium recusandae veritatis vel possimus ea nam id, unde enim nisi rerum quam placeat voluptatum! Asperiores consectetur reprehenderit, exercitationem.</p>
+                  </div>
+              </div>
+  
+              <div class="w-full lg:w-2/5">
+                  <div class="w-full pb-10 px-5 md:px-20 text-gray-500">
+                      <p class="font-semibold text-xl font-Montserrat ml-1">UI/UX</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">HTML, CSS, JS</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 95%"></div>
+                      </div>
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1">Web Development</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">PHP, Java, Python, SQL</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 90%"></div>
+                      </div>
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1">Designing</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">Adobe Photoshop, Adobe Illustrator</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 80%"></div>
+                      </div>                    
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1 mb-4">Creativity</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 85%"></div>
+                      </div> 
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Commitment -->
+    <section id="commitment" class="pb-10 md:pb-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <p class="font-bold text-lg text-gray-600 tracking-wider mb-20 md:ml-1 px-5 md:px-20">My commitment.</p>
+
+            <div class="lg:flex px-5 md:px-20 gap-5">
+              <div class="w-full lg:w-1/2">
+                  <img src="assets/img/anna1.jpg" class="rounded-xl">
+              </div>
+
+              <div class="w-full lg:w-1/2">
+                  <div class="py-10 lg:px-5 text-black">    
+                    <h2 class="font-bold uppercase font-Montserrat tracking-wider text-slate-800 text-3xl mb-4">My <span class="text-yellow-400">commitment</span> is to make <span class="text-yellow-400">your dream a reality</span></h1>
+  
+                    <div class="w-20 h-2 bg-slate-800 mb-10 ml-1"></div>
+
+                    <p class="font-light text-black text-lg ml-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat voluptas cupiditate quae labore facilis expedita veritatis tenetur ex libero illum voluptatibus autem fuga.</p>
+                  </div>
+              </div>  
+            </div>            
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-10 md:py-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <p class="font-bold text-lg text-gray-600 tracking-wider mb-20 md:ml-1 px-5 md:px-20">Portfolio.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20 gap-5">
+              <a data-modal-toggle="portfolioModal1">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/1.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">   
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Web Designing</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal2">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/2.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">    
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">SEO Expertise</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal3">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/3.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">  
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Graphic Designing</h1>
+                      </div>
+                    </div>
+                </div>
+              </a> 
+
+              <a data-modal-toggle="portfolioModal4">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/4.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">   
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">SEO Expertise</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal5">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/5.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">    
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Graphic Designing</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal6">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/6.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">  
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Web Designing</h1>
+                      </div>
+                    </div>
+                </div>
+              </a> 
+            </div>            
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="pb-10 md:pb-20">
+        <div class="container h-full mx-auto px-0 lg:px-20 pb-10 pt-24">
+          <p class="font-bold text-lg text-gray-600 tracking-wider mb-20 md:ml-1 px-5 md:px-20">Contact me.</p>
+
+          <div class="px-5 md:px-20 pb-20">
+            <div class="container text-center flex mb-20">
+              <ul class="flex content-center gap-5 text-gray-50">        
+                  <li>
+                    <a href="#" class="">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+                  <li>
+                    <a href="#" class="">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+                  <li>
+                    <a href="#" class="">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+                  <li>
+                    <a href="#" class="">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+              </ul>
+            </div>
+
+            <form class="grid grid-cols-2 gap-5 text-lg">
+              <div class="col-span-2 md:col-span-1">
+                <input type="text" id="first_name" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="First name">
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="text" id="last_name" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Last name">
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="email" id="email_address" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Email">
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="tel" id="phone_number" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Phone number">
+              </div>
+
+              <div class="col-span-2">
+                <textarea id="message" class="bg-gray-50 border border-gray-100 text-base rounded-2xl focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Message"></textarea>
+              </div>
+              
+              
+              <button type="button" class="text-white hover:text-slate-800 font-semibold bg-slate-800 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-lg w-full sm:w-auto px-5 py-2.5 text-center col-span-2" onclick="sendMessage()">Send message</button>
+            </form>
+            
+            <div id="emailResponse"></div>
+          </div>
+
+
+          <div class="px-5 md:px-20 lg:px-0">
+            <div class="w-full h-full rounded-2xl bg-[url('assets/img/artist.jpg')] bg-cover bg-center p-5 md:p-10 lg:p-20 mt-20">
+              <h2 class="font-bold uppercase font-Montserrat tracking-wider text-white drop-shadow-lg text-3xl mb-4">Let's <span class="text-yellow-400">get started</span></h1>
+              <h2 class="font-bold uppercase font-Montserrat tracking-wider text-white drop-shadow-lg text-3xl mb-4">Let's <span class="text-yellow-400">talk </span>about your <span class="text-yellow-400">project</span></h1>
+              <div class="w-20 h-2 bg-slate-800"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-slate-100">
+      <div class="container">
+        <div class="w-full md:w-4/5 mx-auto block md:flex justify-between">
+          <p class="text-sm text-gray-500 text-center mt-5">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Your Company</a>.&nbsp; All Rights Reserved.</p>
+          <div class="block md:flex md:justify-end text-center md:text-right text-sm text-gray-500 gap-5 mt-5">
+            <a href="#" class="px-3 md:px-0">Privacy Policy</a>
+            <a href="#" class="px-3 md:px-0">Terms of Service</a>
+          </div>        
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+
+    <!-- Portfolio modal 1 -->
+    <div id="portfolioModal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal1">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/1.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 2 -->
+    <div id="portfolioModal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal2">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/2.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 3 -->
+    <div id="portfolioModal3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal3">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/3.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 4 -->
+    <div id="portfolioModal4" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal4">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/4.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 5 -->
+    <div id="portfolioModal5" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal5">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/5.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 6 -->
+    <div id="portfolioModal6" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-xl font-semibold font-Montserrat text-gray-900">
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal6">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                  <img src="assets/img/portfolio/6.jpg"/>
+                  <p class="text-base leading-relaxed text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, enim.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="dist/js/tw-portfolio.js"></script>
+    <script src="dist/js/send-message.js"></script>
+</body>
+</html>
